@@ -79,7 +79,6 @@ li a img{
 }
 
 .price{
-  position: absolute;
   bottom: 0;
   left: 0.9rem;
   background: white;

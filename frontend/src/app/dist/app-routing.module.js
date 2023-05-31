@@ -10,9 +10,12 @@ exports.AppRoutingModule = void 0;
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var home_component_1 = require("./components/pages/components/pages/home/home.component");
+var foodpage_component_1 = require("./foodpage/foodpage.component");
 var routes = [
     { path: '', component: home_component_1.HomeComponent },
-    { path: 'search/:searchTerm', component: home_component_1.HomeComponent }
+    { path: 'search/:searchTerm', component: home_component_1.HomeComponent },
+    { path: 'tag/:tag', component: home_component_1.HomeComponent },
+    { path: 'food/:id', component: foodpage_component_1.FoodpageComponent }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

@@ -8,6 +8,9 @@ import { HomeComponent } from './components/pages/components/pages/home/home.com
 import { RatingModule } from 'ng-starrating';
 import { RatingComponent } from './rating/rating.component';
 import { SearchComponent } from './components/partials/search/search.component';
+import { FormsModule } from '@angular/forms';
+import { TagsComponent } from './tags/tags.component';
+import { FoodpageComponent } from './foodpage/foodpage.component';
 
 
 @NgModule({
@@ -17,10 +20,13 @@ import { SearchComponent } from './components/partials/search/search.component';
     HomeComponent,
     RatingComponent,
     SearchComponent,
+    TagsComponent,
+    FoodpageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
 
   ],
   providers: [],

@@ -17,6 +17,8 @@ var HomeComponent = /** @class */ (function () {
             if (params.searchTerm) {
                 _this.foods = _this.foodService.getAllFoodsBySearchTerm(params.searchTerm);
             }
+            else if (params.tag)
+                _this.foods = _this.foodService.getAllFoodsByTag(params.tag);
             else {
                 alert("not found");
                 _this.foods = foodService.getAll();
